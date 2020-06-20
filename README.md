@@ -8,7 +8,6 @@ Get conda
 ```
 curl -O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 ```
-\
 Install conda
 ```
 bash Anaconda3-2020.02-Linux-x86_64.sh
@@ -19,9 +18,17 @@ After installation if you have `(base)` prefix in you bash then maybe the `auto_
 ```
 conda config --set auto_activate_base False
 ```
-\
 Activate / Deactivate conda
 ```
 conda activate
 conda deactivate
+```
+Update conda
+```
+conda update -n base -c defaults conda
+```
+Remove environment
+```
+conda env remove --name environmentname
+conda remove –name environmentname --all
 ```
